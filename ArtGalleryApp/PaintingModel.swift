@@ -6,7 +6,7 @@ class PaintingModel: NSObject, UITableViewDataSource, PaintingTableViewCellDeleg
     var paintings: [Painting] = []
 
     override init() {
-        for i in 1...11 {
+        for i in 1...12 {
             let imageString = ("Image\(i)")
             guard let image = UIImage(named: imageString) else { return }
             let painting = Painting(image: image)
